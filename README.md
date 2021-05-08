@@ -10,17 +10,17 @@ The purpose of this analysis is to calculate the total daily volume and return r
   <img width="242" alt="Screen Shot 2021-05-08 at 3 37 00 PM" src="https://user-images.githubusercontent.com/82490011/117552799-409f9700-b013-11eb-9405-d82cff10374a.png">
   <img width="235" alt="Screen Shot 2021-05-08 at 3 38 40 PM" src="https://user-images.githubusercontent.com/82490011/117552843-7e042480-b013-11eb-9742-a3d7c947ac85.png">
 
-  Loooking at the 2018 versus 2017 stock performances, it's clear that 2017 stocks performed much better than 2018's, as indicated by the positive return rates (eleven out of the twelve stocks have positive return rates). Looking at 2018, ten out of the eleven stocks have negative return rates. Calculating quick averages, 2018 stocks have an average return rate of -8.5%, whereas 2017 stocks have an average return rate of +67.3%, which further validates our analysis. The only two stocks' performances that improved between 2017 and 2018 are RUN and TERP, going from a return rate of 5.5% to 84.0% and -7.2% to -5.0%, respectively. 
+  Loooking at the 2018 versus 2017 stock performances, it's clear that 2017 stocks performed much better than 2018's, as indicated by the positive return rates (eleven out of the twelve stocks have positive return rates). Looking at 2018, ten out of the eleven stocks have negative return rates. Calculating quick averages, 2018 stocks have an average return rate of -8.5%, whereas 2017 stocks have an average return rate of +67.3%, which further validates our conclusion. The only two stocks' performances that improved between 2017 and 2018 are RUN and TERP, going from a return rate of 5.5% to 84.0% and -7.2% to -5.0%, respectively. 
 
 
   ### Comparing Execution Time Between Original & Refactored Script
-  Looking at the below screenshots, the original (un-refactored) script took ~0.32 seconds for 2017 and 2018
+  Looking at the below screenshots, the original (un-refactored) script took ~0.32 seconds to run for 2017 and 2018
   
   <img width="256" alt="Un-refactored_2017" src="https://user-images.githubusercontent.com/82490011/117553804-28327b00-b019-11eb-91f5-a3168762a1ee.png">
 
 <img width="258" alt="Un-refactored_2018" src="https://user-images.githubusercontent.com/82490011/117553807-2c5e9880-b019-11eb-90cd-dea2a22d9d47.png">
 
-  ...whereas the refactored script took ~0.10 seconds for 2017 and 2018.
+  ...whereas the refactored script took ~0.10 seconds to run.
   
   <img width="257" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/82490011/117553848-73e52480-b019-11eb-8c9d-64b4c5bc55fb.png">
 
@@ -31,7 +31,7 @@ The purpose of this analysis is to calculate the total daily volume and return r
 ## Summary
 
   ### Advantages & Disadvantages of Refactoring Code
-The advantage of refactoring code is that it increases efficiency. Instead of looping through our tickers each time when we want to calculate the volume or      find opening and closing prices, we can use an index to start with our first ticker, find all the necessary information we need, and then move onto the next ticker one we've done so. This allows for increased efficiency, and as a result, shorter script run-times. Similarly, it makes the code more streamlined and therefore easier to maintain. The disadvantages of refactoring code include the fact that it can be time-consuming, as well as the fact that it may introduce bugs into the code. 
+The advantage of refactoring code is that it increases efficiency. Instead of looping through our tickers each time when we want to calculate the volume or      find opening and closing prices, we can use an index to start with our first ticker, find all the necessary information we need, and then move onto the next ticker once we've done so. This allows for increased efficiency, and as a result, shorter script run-times. Similarly, it makes the code more streamlined and therefore easier to maintain. The disadvantages of refactoring code include the fact that it can be time-consuming, as well as the fact that it may introduce bugs into the code. 
 
   ### How do these pros and cons apply to refactoring the original VBA script?
 The imporved efficiency can be seen most notably in our pre-existing if-statement used to determine a stock's ending price. With the refactored code, we can concurrently determine if it's time to move onto the next ticker or not, as shown in the below code. By not requiring a for-loop to loop through the tickers, and instead running the analysis one ticker at a time, our refactored code is more efficient. 
@@ -50,4 +50,4 @@ Conversely, in the original script, a stock's ending price was calculated within
 
 <img width="596" alt="Screen Shot 2021-05-08 at 4 32 57 PM" src="https://user-images.githubusercontent.com/82490011/117554099-12be5080-b01b-11eb-866b-1d8fe19c8b62.png">  
 
-While it's true that refactoring code can be time-consuming and can potentially incorporate bugs into our code, the drastically increased efficiency outweigh these disadvantages. After all, we improved our computational speed by 69%! 
+While it's true that refactoring code can be time-consuming and can potentially incorporate bugs into our code, the drastically increased efficiency outweigh the cons. After all, we improved our computational speed by 69%! 
