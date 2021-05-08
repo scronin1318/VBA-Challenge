@@ -34,8 +34,12 @@ The purpose of this analysis is to calculate the total daily volume and return r
 The advantage of refactoring code is that it increases efficiency. Instead of looping through our tickers each time when we want to calculate the volume or      find opening and closing prices, we can use an index to start with our first ticker, find all the necessary information we need, and then move onto the next ticker one we've done so. This allows for increased efficiency, and as a result, shorter script run-times. Similarly, it makes the code more streamlined and therefore easier to maintain. The disadvantages of refactoring code include the fact that it can be time-consuming, as well as the fact that it may introduce bugs into the code. 
 
   ### How do these pros and cons apply to refactoring the original VBA script?
-The imporved efficiency can be seen most notably in our pre-existing if-statement used to determine a stock's ending price. With the refactored code, we can concurrently determine if it's time to move onto the next ticker or not, as shown in the below code. By not requiring a for-loop to loop through the tickers, and instead running the analysis one ticker at a time, our refactored code is more efficient.  
+The imporved efficiency can be seen most notably in our pre-existing if-statement used to determine a stock's ending price. With the refactored code, we can concurrently determine if it's time to move onto the next ticker or not, as shown in the below code. By not requiring a for-loop to loop through the tickers, and instead running the analysis one ticker at a time, our refactored code is more efficient. 
+
+
   <img width="596" alt="Screen Shot 2021-05-08 at 4 32 57 PM" src="https://user-images.githubusercontent.com/82490011/117554099-12be5080-b01b-11eb-866b-1d8fe19c8b62.png">
   
 Conversely, in the original script, a stock's ending price was calculated within a for-loop that looped through the tickers. So not only did our computer have to loop through the rows in evaluating our data, but it had to loop through the tickers as well, creating a for-loop within a for-loop, decreasing efficiency.
+
+
 <img width="596" alt="Screen Shot 2021-05-08 at 4 32 57 PM" src="https://user-images.githubusercontent.com/82490011/117554099-12be5080-b01b-11eb-866b-1d8fe19c8b62.png">  
