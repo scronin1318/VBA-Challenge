@@ -8,6 +8,9 @@ The purpose of this analysis is to calculate the total daily volume and return r
 
   ### Comparing 2017 and 2018 Stock Performance
   <img width="242" alt="Screen Shot 2021-05-08 at 3 37 00 PM" src="https://user-images.githubusercontent.com/82490011/117552799-409f9700-b013-11eb-9405-d82cff10374a.png">
+  <img width="235" alt="Screen Shot 2021-05-08 at 3 38 40 PM" src="https://user-images.githubusercontent.com/82490011/117552843-7e042480-b013-11eb-9742-a3d7c947ac85.png">
+
+  
 
 
   
