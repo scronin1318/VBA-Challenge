@@ -10,7 +10,7 @@ The purpose of this analysis is to calculate the total daily volume and return r
   <img width="242" alt="Screen Shot 2021-05-08 at 3 37 00 PM" src="https://user-images.githubusercontent.com/82490011/117552799-409f9700-b013-11eb-9405-d82cff10374a.png">
   <img width="235" alt="Screen Shot 2021-05-08 at 3 38 40 PM" src="https://user-images.githubusercontent.com/82490011/117552843-7e042480-b013-11eb-9742-a3d7c947ac85.png">
 
-  Loooking at the 2018 versus 2017 stock performances, it's clear that 2017 stocks performed much better than 2018's, as indicated by the positive return rates (eleven out of the twelve stocks have positive return rates). Looking at 2018, ten out of the eleven stocks have negative return rates. Calculating quick averages, 2018 stocks have an average return rate of -8.5%, whereas 2017 stocks have an average return rate of +67.3%, which further validates our conclusion. The only two stocks' performances that improved between 2017 and 2018 are RUN and TERP, going from a return rate of 5.5% to 84.0% and -7.2% to -5.0%, respectively. 
+  Loooking at the 2018 versus 2017 stock performances, it's clear that 2017 stocks performed much better than 2018's, as indicated by the positive return rates (eleven out of the twelve stocks have positive return rates). Looking at 2018, ten out of the twelve stocks have negative return rates. Calculating quick averages, 2018 stocks have an average return rate of -8.5%, whereas 2017 stocks have an average return rate of +67.3%, which further validates our conclusion. The only two stocks' performances that improved between 2017 and 2018 are RUN and TERP, going from a return rate of 5.5% to 84.0% and -7.2% to -5.0%, respectively. 
 
 
   ### Comparing Execution Time Between Original & Refactored Script
