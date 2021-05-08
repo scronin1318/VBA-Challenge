@@ -49,3 +49,5 @@ Conversely, in the original script, a stock's ending price was calculated within
 
 
 <img width="596" alt="Screen Shot 2021-05-08 at 4 32 57 PM" src="https://user-images.githubusercontent.com/82490011/117554099-12be5080-b01b-11eb-866b-1d8fe19c8b62.png">  
+
+While it's true that refactoring code can be time-consuming and can potentially incorporate bugs into our code, the drastically increased efficiency outweigh these disadvantages. After all, we improved our computational speed by 69%! 
