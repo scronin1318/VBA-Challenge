@@ -37,9 +37,15 @@ The advantage of refactoring code is that it increases efficiency. Instead of lo
 The imporved efficiency can be seen most notably in our pre-existing if-statement used to determine a stock's ending price. With the refactored code, we can concurrently determine if it's time to move onto the next ticker or not, as shown in the below code. By not requiring a for-loop to loop through the tickers, and instead running the analysis one ticker at a time, our refactored code is more efficient. 
 
 
+
+
   <img width="596" alt="Screen Shot 2021-05-08 at 4 32 57 PM" src="https://user-images.githubusercontent.com/82490011/117554099-12be5080-b01b-11eb-866b-1d8fe19c8b62.png">
   
+  
+  
 Conversely, in the original script, a stock's ending price was calculated within a for-loop that looped through the tickers. So not only did our computer have to loop through the rows in evaluating our data, but it had to loop through the tickers as well, creating a for-loop within a for-loop, decreasing efficiency.
+
+
 
 
 <img width="596" alt="Screen Shot 2021-05-08 at 4 32 57 PM" src="https://user-images.githubusercontent.com/82490011/117554099-12be5080-b01b-11eb-866b-1d8fe19c8b62.png">  
