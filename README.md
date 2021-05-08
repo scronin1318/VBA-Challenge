@@ -34,7 +34,7 @@ The purpose of this analysis is to calculate the total daily volume and return r
 The advantage of refactoring code is that it increases efficiency. Instead of looping through our tickers each time when we want to calculate the volume or      find opening and closing prices, we can use an index to start with our first ticker, find all the necessary information we need, and then move onto the next ticker once we've done so. This allows for increased efficiency, and as a result, shorter script run-times. Similarly, it makes the code more streamlined and therefore easier to maintain. The disadvantages of refactoring code include the fact that it can be time-consuming, as well as the fact that it may introduce bugs into the code. 
 
   ### How do these pros and cons apply to refactoring the original VBA script?
-The imporved efficiency can be seen most notably in our pre-existing if-statement used to determine a stock's ending price. With the refactored code, we can concurrently determine if it's time to move onto the next ticker or not, as shown in the below code. By not requiring a for-loop to loop through the tickers, and instead running the analysis one ticker at a time, our refactored code is more efficient. 
+The imporved efficiency can be seen most notably in our if-statement used to determine a stock's ending price. With the refactored code, we can concurrently determine if it's time to move onto the next ticker or not, as shown in the below code. By not requiring a for-loop to loop through the tickers, and instead running the analysis one ticker at a time, our refactored code is more efficient. 
 
 
 
